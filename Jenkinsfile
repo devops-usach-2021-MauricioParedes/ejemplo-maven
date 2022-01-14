@@ -1,30 +1,3 @@
-
-   
-pipeline {
-    agent any
-    
-    stages{
-        stage('Compile'){
-            steps{
-                script{
-                    sh "./mvnw clean compile -e"
-                }
-                
-            }
-            
-        }
-        stage('Test'){
-            steps{
-                script{
-                    
-                        sh "./mvnw clean test -e"
-                    
-                }
-                
-            }
-            
-        }
-
    
 pipeline {
     agent any
